@@ -50,6 +50,9 @@ exit
 
 :enable
 cls
+title Internet Enabled
+mode 40,12
+color 0e
 netsh interface set interface "Local Area Connection" enable
 ::"Local Area Connection" replace this name with your adapter name
 echo.
@@ -59,23 +62,23 @@ Echo        Adapter Enabled Successfully!
 echo.
 Echo       Press "Enter" For Menu
 echo.
-echo.
 pause>nul
 cls
 goto start
 
 :disable
 cls
-color 0C
-netsh interface set interface "Local Area Connection" disable 
+Title Internet Disabled 
+mode 40,12
+color 0c
+netsh interface set interface "Local Area Connection" disable
 ::"Local Area Connection" replace this name with your adapter name
 echo.
 echo.
 echo.
-Echo        Adapter Enabled Successfully!
+Echo      Adapter Disnabled Successfully!
 echo.
-Echo       Press "Enter" For Menu
-echo.
+Echo    Press "Enter" For Menu
 echo.
 pause>nul
 cls
